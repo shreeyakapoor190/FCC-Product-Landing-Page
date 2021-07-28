@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    overflow-x: scroll;
+}
+
+#main {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: #eee;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#header>ul {
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+    font-weight: 400;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-emphasis: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: baseline;
+    min-height: 75px;
+    margin-top: 120px;
+    /* position: relative; */
+}
+
+#email {
+    padding: 4% 0;
+    width: 20em;
+    height: 2em;
+    margin-top: 4%;
+}
+
+#button {
+    background-color: rgb(228, 174, 26);
+    color: black;
+    font-weight: 800;
+    border: none;
+    font-size: 15px;
+    border-radius: 2%;
+    height: 3em;
+    width: 15em;
+}
+
+#button:hover {
+    background-color: rgba(238, 138, 24, 0.911);
+    transition: background-color 1s;
+}
+
+i {
+    color: rgb(250, 139, 35);
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 15%;
+}
+
+#feature-heading {
+    display: inline;
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+#feature-para {
+    display: block;
+    padding-left: 10%;
+    padding-bottom: 4%;
+}
+
+#howitworks {
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding: 5% 5%;
+}
+
+#one,
+#two,
+#three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: black solid 0.094em;
+    border-radius: 2%;
+    margin: 10px;
+    width: calc(100% / 3);
+}
+
+.h {
+    background-color: rgb(224, 224, 238);
+    margin-bottom: 4%;
+    white-space: nowrap;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.p {
+    margin: 5px;
+}
+
+.pone {
+    margin-top: 15px;
+}
+
+.select {
+    background-color: rgb(228, 174, 26);
+    color: black;
+    font-weight: 400;
+    border: none;
+    border-radius: 2%;
+    padding: 10% 15%;
+    margin: 15px 0;
+}
+
+.select:hover {
+    background-color: rgba(238, 138, 24, 0.911);
+    transition: background-color 1s;
+}
+
+#contact {
+    background-color: rgb(224, 224, 238);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.data {
+    padding: 0 8%;
+    background-color: rgb(224, 224, 238);
+    border: none;
+}
+
+.d {
+    padding-bottom: 5%;
+    color: rgb(138, 128, 128);
+}
+
+@media only screen and (max-width: 600px) and (min-width:0px) {
+    #header {
+        flex-direction: column;
+        height: 21vh;
+        padding-bottom: 5px;
+    }
+
+    #header>ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        word-wrap: none;
+    }
+
+    #heading {
+        margin-top: 22vh;
+        text-align: center;
+    }
+
+    #heading>h2 {
+        word-wrap: break-word;
+    }
+
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #features .icon {
+        display: none;
+    }
+
+    #features {
+        margin: 5% 2%;
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+    }
+
+    #one,
+    #two,
+    #three {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) and (min-width:0px) {
+    #header {
+        flex-direction: column;
+        height: 42vh;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #heading {
+        margin-top: 45vh;
+        text-align: center;
+    }
+
+    #header #logo {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width:600px) {
+    .nav_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header>ul {
+        flex-direction: column;
+        margin-top: 8%;
+        padding-bottom: 5%;
+    }
+
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #one,
+    #two,
+    #three {
+        width: 55%;
+    }
+}
